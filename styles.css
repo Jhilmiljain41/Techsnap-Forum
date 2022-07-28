@@ -41,7 +41,7 @@ span > a {
 }
 .forum-card:hover{
   width: 105%;
-  right: 15px;
+  right: 20px;
   position: relative;
   padding: 18px 12px !important;
   background-color: #ebeef3;
