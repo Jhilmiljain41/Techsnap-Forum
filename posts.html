@@ -1246,16 +1246,26 @@
 
 <!-- filter section starts-->
 <div class="container">
-  <div class="d-flex gap-3 filter-sec mb-4">
-    <button class="btn all">All</button>
-    <button class="btn own">Owned</button>
-    <button class="btn bmed">Bookmarked</button>
-
+  <div id="header">
+    <nav id="navbar-example2" class="navbar px-3">
+      <ul class="nav active-nav">
+        <li class="nav-item active">
+          <a class="nav-link" data-page="all"  href="#">All</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" data-page="owned" href="#">Owned</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-page="bookmarked" href="#">Bookmarked</a>
+        </li>
+      </ul>
+    </nav>
+    <hr>
   </div>
 </div>
     <!-- post section starts -->
-
-    <div class="container">
+    <div id="pages">
+    <div id="all" class="container page" data-page="all">
       <!-- post model-3 post-1 -->
       <div class="mt-2 my-md-3 py-3 mx-auto post-card">
         <div class="d-flex flex-row forum-item gap-3">
@@ -1897,7 +1907,650 @@
 
       <br /><br /><br /><br /><br />
     </div>
+    <div id="owned" class="container page hide" data-page="owned">
+      <!-- post model-3 post-1 -->
+      <div class="mt-2 my-md-3 py-3 mx-auto post-card">
+        <div class="d-flex flex-row forum-item gap-3">
+          <div class="d-flex flex-column">
+            <i class="fa fa-arrow-up fa-lg lh-1 pt-1" aria-hidden="true"></i>
+            <span class="upvote ps-1" style="padding-top: 2px">10</span>
+          </div>
+
+          <div class="d-flex flex-column lh-2 forum-item-box">
+            <div class="d-flex gap-1">
+              <div class="forum-item-postedby-img posted-by-img">
+                <img
+                  src="https://storage.googleapis.com/kaggle-avatars/images/195039-fb.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="fw-bold">
+                <a class="post-title fs-md-5" href="comment.html">
+                  Guide: A list of how-to’s for giving and receiving
+                  code-help</a
+                >
+              </div>
+            </div>
+            <div class="post-description">
+              Technical guides will teach you how to use the forums. These
+              guides cover how the forums are organized, how to use the features
+              of the forums, and quick tips for posting!
+            </div>
+            <span class="text-secondary" href="">
+              Post by
+              <a href="" class="posted-by">eren yeager</a> on
+              <time>May 12 2022</time></span
+            >
+          </div>
+          <div class="d-flex flex-column ms-auto align-items-end">
+            <div class="dropdown me-1">
+              <span
+                class="dropdown-toggle fa fa-caret-square-o-down"
+                type="button"
+                id="dropdownMenu2"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+              </span>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <li>
+                  <div class="dropdown-item view">
+                    <i class="fa fa-eye" aria-hidden="true">
+                      <span class="views">6</span></i
+                    >
+                  </div>
+                </li>
+                <li>
+                  <div class="dropdown-item bookmark">
+                    <i class="fa fa-bookmark-o" aria-hidden="true"> Bookmark</i>
+                  </div>
+                </li>
+                <li>
+                  <div class="dropdown-item flag">
+                    <i class="fa fa-flag-o" aria-hidden="true"> Flag Content</i>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="d-flex gap-2">
+              <div class="d-flex">
+                <div class="comment pe-1">
+                  <span class="d-none d-md-block">6&nbsp;comments</span>
+                  <span class="fa fa-comment-o d-md-none" aria-hidden="true"
+                    >&nbsp;6</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- post model-3 post 1 ends -->
+
+      <!-- post2 model-3 starts -->
+      <div class="mt-2 my-md-3 py-3 mx-auto post-card">
+        <div class="d-flex flex-row forum-item gap-3">
+          <div class="d-flex flex-column">
+            <i class="fa fa-arrow-up fa-lg lh-1 pt-1" aria-hidden="true"></i>
+            <span class="upvote ps-1" style="padding-top: 2px">25</span>
+          </div>
+
+          <div class="d-flex flex-column lh-2 forum-item-box">
+            <div class="d-flex gap-1">
+              <div class="forum-item-postedby-img posted-by-img">
+                <img
+                  src="https://storage.googleapis.com/kaggle-avatars/images/195039-fb.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="fw-bold">
+                <a class="post-title fs-md-5" href="comment.html"
+                  >Create a topic that everyone will read</a
+                >
+              </div>
+            </div>
+            <div class="post-description">
+              A great topic is one that provides potential helpers with enough
+              information to start helping you answer your question! But, before
+              you go ahead and create a new topic, be sure to search for
+              existing answers!
+            </div>
+            <span class="text-secondary" href="">
+              Post by
+              <a href="" class="posted-by">eren yeager</a> on
+              <time>May 12 2022</time></span
+            >
+          </div>
+          <div class="d-flex flex-column ms-auto align-items-end">
+            <div class="dropdown me-1">
+              <span
+                class="dropdown-toggle fa fa-caret-square-o-down"
+                type="button"
+                id="dropdownMenu2"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+              </span>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <li>
+                  <div class="dropdown-item view">
+                    <i class="fa fa-eye" aria-hidden="true">
+                      <span class="views">6</span></i
+                    >
+                  </div>
+                </li>
+                <li>
+                  <div class="dropdown-item bookmark">
+                    <i class="fa fa-bookmark-o" aria-hidden="true"> Bookmark</i>
+                  </div>
+                </li>
+                <li>
+                  <div class="dropdown-item flag">
+                    <i class="fa fa-flag-o" aria-hidden="true"> Flag Content</i>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="d-flex gap-2">
+              <div class="d-flex">
+                <div class="comment pe-1">
+                  <span class="d-none d-md-block">9&nbsp;comments</span>
+                  <span class="fa fa-comment-o d-md-none" aria-hidden="true"
+                    >&nbsp;9</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- post2 model3 ends -->
+
+      <!-- post3 starts -->
+      
+      <!-- post3 ends -->
+      <div class="mt-2 my-md-3 py-3 mx-auto post-card bookmarked">
+        <div class="d-flex flex-row forum-item gap-3">
+          <div class="d-flex flex-column">
+            <i class="fa fa-arrow-up fa-lg lh-1 pt-1" aria-hidden="true"></i>
+            <span class="upvote ps-1" style="padding-top: 2px">43</span>
+          </div>
+
+          <div class="d-flex flex-column lh-2 forum-item-box">
+            <div class="d-flex gap-1">
+              <div class="forum-item-postedby-img posted-by-img">
+                <img
+                  src="https://storage.googleapis.com/kaggle-avatars/images/195039-fb.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="fw-bold">
+                <a class="post-title fs-md-5" href="comment.html"
+                  >Need advice for buying chromebook</a
+                >
+              </div>
+            </div>
+            <div class="post-description">
+              Hello everyone i was thinking of buying Chromebook, just for daily
+              stuff and some mobile games i play on my phone, is that also able
+              in the chromebook through Google PlayStore? Which chromebook would
+              u advice?
+            </div>
+            <span class="text-secondary" href="">
+              Post by
+              <a href="" class="posted-by">eren yeager</a> on
+              <time>May 12 2022</time></span
+            >
+          </div>
+          <div class="d-flex flex-column ms-auto align-items-end">
+            <div class="dropdown me-1">
+              <span
+                class="dropdown-toggle fa fa-caret-square-o-down"
+                type="button"
+                id="dropdownMenu2"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+              </span>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <li>
+                  <div class="dropdown-item view">
+                    <i class="fa fa-eye" aria-hidden="true">
+                      <span class="views">6</span></i
+                    >
+                  </div>
+                </li>
+                <li>
+                  <div class="dropdown-item bookmark">
+                    <i class="fa fa-bookmark-o" aria-hidden="true"> Bookmark</i>
+                  </div>
+                </li>
+                <li>
+                  <div class="dropdown-item flag">
+                    <i class="fa fa-flag-o" aria-hidden="true"> Flag Content</i>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="d-flex gap-2">
+              <div class="d-flex">
+                <div class="comment pe-1">
+                  <span class="d-none d-md-block">24&nbsp;comments</span>
+                  <span class="fa fa-comment-o d-md-none" aria-hidden="true"
+                    >&nbsp;24</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- post4 starts -->
+      <div class="mt-2 my-md-3 py-3 mx-auto post-card owned">
+        <div class="d-flex flex-row forum-item gap-3">
+          <div class="d-flex flex-column">
+            <i class="fa fa-arrow-up fa-lg lh-1 pt-1" aria-hidden="true"></i>
+            <span class="upvote ps-1" style="padding-top: 2px">71</span>
+          </div>
+
+          <div class="d-flex flex-column lh-2 forum-item-box">
+            <div class="d-flex gap-1">
+              <div class="forum-item-postedby-img posted-by-img">
+                <img
+                  src="https://storage.googleapis.com/kaggle-avatars/images/195039-fb.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="fw-bold">
+                <a class="post-title fs-md-5" href="comment.html"
+                  >BITCOIN COULD FALL TO $8,000 (analyst warns) BUT COULD ALSO
+                  RISE TO $100,000 (other analyst predicts)</a
+                >
+              </div>
+            </div>
+            <div class="post-description">
+              All these “news” article headlines are getting so old. I don’t
+              even bother reading them anymore. I will say these are most likely
+              not good “selling” prices but yes prices COULD fall even more..
+              prices also will most likely rebound once some negative macro
+              economic activity slows down (hopefully later this year) so this
+              COULD be a good time to buy.
+            </div>
+            <span class="text-secondary" href="">
+              Post by
+              <a href="" class="posted-by">eren yeager</a> on
+              <time>May 12 2022</time></span
+            >
+          </div>
+          <div class="d-flex flex-column ms-auto align-items-end">
+            <div class="dropdown me-1">
+              <span
+                class="dropdown-toggle fa fa-caret-square-o-down"
+                type="button"
+                id="dropdownMenu2"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+              </span>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <li>
+                  <div class="dropdown-item view">
+                    <i class="fa fa-eye" aria-hidden="true">
+                      <span class="views">6</span></i
+                    >
+                  </div>
+                </li>
+                <li>
+                  <div class="dropdown-item bookmark">
+                    <i class="fa fa-bookmark-o" aria-hidden="true"> Bookmark</i>
+                  </div>
+                </li>
+                <li>
+                  <div class="dropdown-item flag">
+                    <i class="fa fa-flag-o" aria-hidden="true"> Flag Content</i>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="d-flex gap-2">
+              <div class="d-flex">
+                <div class="comment pe-1">
+                  <span class="d-none d-md-block">28&nbsp;comments</span>
+                  <span class="fa fa-comment-o d-md-none" aria-hidden="true"
+                    >&nbsp;28</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- post4 ends -->
+
+      <!-- post5 starts -->
+      <div class="mt-2 my-md-3 py-3 mx-auto post-card bookmarked">
+        <div class="d-flex flex-row forum-item gap-3">
+          <div class="d-flex flex-column">
+            <i class="fa fa-arrow-up fa-lg lh-1 pt-1" aria-hidden="true"></i>
+            <span class="upvote ps-1" style="padding-top: 2px">95</span>
+          </div>
+
+          <div class="d-flex flex-column lh-2 forum-item-box">
+            <div class="d-flex gap-1">
+              <div class="forum-item-postedby-img posted-by-img">
+                <img
+                  src="https://storage.googleapis.com/kaggle-avatars/images/195039-fb.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="fw-bold">
+                <a class="post-title fs-md-5" href="comment.html"
+                  >Is regex used a lot in Web dev?</a
+                >
+              </div>
+            </div>
+            <div class="post-description">
+              Hey guys, I'm currently learning regular expressions in JavaScript
+              but a lot of the tutorials I've been looking into mention most
+              developers avoid this topic.Is it important to know/is it used
+              regularly? What alternatives are there for devs who avoid this?
+            </div>
+            <span class="text-secondary" href="">
+              Post by
+              <a href="" class="posted-by">eren yeager</a> on
+              <time>May 12 2022</time></span
+            >
+          </div>
+          <div class="d-flex flex-column ms-auto align-items-end">
+            <div class="dropdown me-1">
+              <span
+                class="dropdown-toggle fa fa-caret-square-o-down"
+                type="button"
+                id="dropdownMenu2"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+              </span>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <li>
+                  <div class="dropdown-item view">
+                    <i class="fa fa-eye" aria-hidden="true">
+                      <span class="views">6</span></i
+                    >
+                  </div>
+                </li>
+                <li>
+                  <div class="dropdown-item bookmark">
+                    <i class="fa fa-bookmark-o" aria-hidden="true"> Bookmark</i>
+                  </div>
+                </li>
+                <li>
+                  <div class="dropdown-item flag">
+                    <i class="fa fa-flag-o" aria-hidden="true"> Flag Content</i>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="d-flex gap-2">
+              <div class="d-flex">
+                <div class="comment pe-1">
+                  <span class="d-none d-md-block">20&nbsp;comments</span>
+                  <span class="fa fa-comment-o d-md-none" aria-hidden="true"
+                    >&nbsp;20</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- post5 ends -->
+
+      <br /><br /><br /><br /><br />
+    </div>
+    <div id="bookmarked" class="container page hide" data-page="bookmarked">
+      <!-- post model-3 post-1 -->
+      <div class="mt-2 my-md-3 py-3 mx-auto post-card">
+        <div class="d-flex flex-row forum-item gap-3">
+          <div class="d-flex flex-column">
+            <i class="fa fa-arrow-up fa-lg lh-1 pt-1" aria-hidden="true"></i>
+            <span class="upvote ps-1 pt-1" style="padding-top: 2px">12</span>
+          </div>
+
+          <div class="d-flex flex-column lh-2 forum-item-box">
+            <div class="d-flex gap-1">
+              <div class="forum-item-postedby-img posted-by-img">
+                <img
+                  src="https://storage.googleapis.com/kaggle-avatars/images/195039-fb.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="fw-bold">
+                <a class="post-title fs-md-5" href="comment.html"
+                  >How to ask good questions (and get good answers)</a
+                >
+              </div>
+            </div>
+            <div class="post-description">
+              In general, your post will get a good answer if you’ve remembered
+              to do the following: Always search for existing answers first.
+              Provide as much information and context as possible. Format your
+              code.
+            </div>
+            <span class="text-secondary" href="">
+              Post by
+              <a href="" class="posted-by">eren yeager</a> on
+              <time>May 12 2022</time></span
+            >
+          </div>
+          <div class="d-flex flex-column ms-auto align-items-end">
+            <div class="dropdown me-1">
+              <span
+                class="dropdown-toggle fa fa-caret-square-o-down"
+                type="button"
+                id="dropdownMenu2"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+              </span>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <li>
+                  <div class="dropdown-item view">
+                    <i class="fa fa-eye" aria-hidden="true">
+                      <span class="views">6</span></i
+                    >
+                  </div>
+                </li>
+                <li>
+                  <div class="dropdown-item bookmark">
+                    <i class="fa fa-bookmark-o" aria-hidden="true"> Bookmark</i>
+                  </div>
+                </li>
+                <li>
+                  <div class="dropdown-item flag">
+                    <i class="fa fa-flag-o" aria-hidden="true"> Flag Content</i>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="d-flex gap-2">
+              <div class="d-flex">
+                <div class="comment pe-1">
+                  <span class="d-none d-md-block">5&nbsp;comments</span>
+                  <span class="fa fa-comment-o d-md-none" aria-hidden="true"
+                    >&nbsp;5</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- post model-3 post 1 ends -->
+      <!-- post2 model-3 starts -->
+      <div class="mt-2 my-md-3 py-3 mx-auto post-card bookmarked">
+        <div class="d-flex flex-row forum-item gap-3">
+          <div class="d-flex flex-column">
+            <i class="fa fa-arrow-up fa-lg lh-1 pt-1" aria-hidden="true"></i>
+            <span class="upvote ps-1" style="padding-top: 2px">59</span>
+          </div>
+
+          <div class="d-flex flex-column lh-2 forum-item-box">
+            <div class="d-flex gap-1">
+              <div class="forum-item-postedby-img posted-by-img">
+                <img
+                  src="https://storage.googleapis.com/kaggle-avatars/images/195039-fb.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="fw-bold">
+                <a class="post-title fs-md-5" href="comment.html"
+                  >Why do Some Insist That it's Better for People to Learn With
+                  a Text Editor Than with and IDE?</a
+                >
+              </div>
+            </div>
+            <div class="post-description">
+              I've noticed a small but existent group seems to strongly suggest
+              that everyone should learn how to code using Notepad++, or even
+              just Notepad, and learn to debug and launch using the console.
+              This seems to be an issue, and could really push beginners away
+              from learning coding.
+            </div>
+            <span class="text-secondary" href="">
+              Post by
+              <a href="" class="posted-by">eren yeager</a> on
+              <time>May 12 2022</time></span
+            >
+          </div>
+          <div class="d-flex flex-column ms-auto align-items-end">
+            <div class="dropdown me-1">
+              <span
+                class="dropdown-toggle fa fa-caret-square-o-down"
+                type="button"
+                id="dropdownMenu2"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+              </span>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <li>
+                  <div class="dropdown-item view">
+                    <i class="fa fa-eye" aria-hidden="true">
+                      <span class="views">6</span></i
+                    >
+                  </div>
+                </li>
+                <li>
+                  <div class="dropdown-item bookmark">
+                    <i class="fa fa-bookmark-o" aria-hidden="true"> Bookmark</i>
+                  </div>
+                </li>
+                <li>
+                  <div class="dropdown-item flag">
+                    <i class="fa fa-flag-o" aria-hidden="true"> Flag Content</i>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="d-flex gap-2">
+              <div class="d-flex">
+                <div class="comment pe-1">
+                  <span class="d-none d-md-block">35&nbsp;comments</span>
+                  <span class="fa fa-comment-o d-md-none" aria-hidden="true"
+                    >&nbsp;35</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- post2 model3 ends -->
+
+      <!-- post3 starts -->
+      <div class="mt-2 my-md-3 py-3 mx-auto post-card bookmarked">
+        <div class="d-flex flex-row forum-item gap-3">
+          <div class="d-flex flex-column">
+            <i class="fa fa-arrow-up fa-lg lh-1 pt-1" aria-hidden="true"></i>
+            <span class="upvote ps-1" style="padding-top: 2px">95</span>
+          </div>
+
+          <div class="d-flex flex-column lh-2 forum-item-box">
+            <div class="d-flex gap-1">
+              <div class="forum-item-postedby-img posted-by-img">
+                <img
+                  src="https://storage.googleapis.com/kaggle-avatars/images/195039-fb.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="fw-bold">
+                <a class="post-title fs-md-5" href="comment.html"
+                  >Is regex used a lot in Web dev?</a
+                >
+              </div>
+            </div>
+            <div class="post-description">
+              Hey guys, I'm currently learning regular expressions in JavaScript
+              but a lot of the tutorials I've been looking into mention most
+              developers avoid this topic.Is it important to know/is it used
+              regularly? What alternatives are there for devs who avoid this?
+            </div>
+            <span class="text-secondary" href="">
+              Post by
+              <a href="" class="posted-by">eren yeager</a> on
+              <time>May 12 2022</time></span
+            >
+          </div>
+          <div class="d-flex flex-column ms-auto align-items-end">
+            <div class="dropdown me-1">
+              <span
+                class="dropdown-toggle fa fa-caret-square-o-down"
+                type="button"
+                id="dropdownMenu2"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+              </span>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <li>
+                  <div class="dropdown-item view">
+                    <i class="fa fa-eye" aria-hidden="true">
+                      <span class="views">6</span></i
+                    >
+                  </div>
+                </li>
+                <li>
+                  <div class="dropdown-item bookmark">
+                    <i class="fa fa-bookmark-o" aria-hidden="true"> Bookmark</i>
+                  </div>
+                </li>
+                <li>
+                  <div class="dropdown-item flag">
+                    <i class="fa fa-flag-o" aria-hidden="true"> Flag Content</i>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="d-flex gap-2">
+              <div class="d-flex">
+                <div class="comment pe-1">
+                  <span class="d-none d-md-block">20&nbsp;comments</span>
+                  <span class="fa fa-comment-o d-md-none" aria-hidden="true"
+                    >&nbsp;20</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- post3 ends -->
+
+      <br /><br /><br /><br /><br />
+    </div>
   </div>
+</div>
 
   <section id="footer">
     <div class="footer_MainBox">
@@ -2102,6 +2755,27 @@
         </script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="script.js"></script>
+    <script type="text/javascript">
+      const lists = document.querySelectorAll(".active-nav li");
+      lists.forEach((item) => {
+      item.addEventListener("click", () => {
+      document.querySelector(".active-nav li.active").classList.remove("active");
+      item.classList.add("active");
+  });
+});
+</script>
+<script>
+  $(document).ready(function() {
+$(".active-nav li a").on('click', function(e) {
+  e.preventDefault()
+  var page = $(this).data('page');
+  $("#pages .page:not('hide')").stop().fadeOut('fast', function() {
+      $(this).addClass('hide');
+      $('#pages .page[data-page="'+page+'"]').fadeIn('slow').removeClass('hide');
+  });
+});
+});
+</script>
   </body>
   <script src="main/nav-dropdown.js"></script>
 </html>

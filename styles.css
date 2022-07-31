@@ -29,7 +29,9 @@ span > a {
   background: #5050da;
  
 }
-
+.hide{
+  display: none;
+}
 
 .forum-item-postedby-img > img {
   display: none;
@@ -168,4 +170,27 @@ span > a {
       height: 25px;
       border-radius: 100%;
     }
+  }
+  .nav {
+    font-size: large;
+    padding-bottom: 10px;
+  }
+  .nav li {
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+  }
+  .nav li .active:hover{
+    color: black;
+  }
+  .nav li.active::after {
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 100%;
+    background-color: #646464;
+    left: 0;
+    bottom: -7px;
+    border-radius: 20px;
+    animation: appear 0.2s linear;
   }
