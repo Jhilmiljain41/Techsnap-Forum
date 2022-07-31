@@ -40,8 +40,8 @@ span > a {
 
 }
 .forum-card:hover{
-  width: 105%;
-  right: 20px;
+  width: 102%;
+  right: 10px;
   position: relative;
   padding: 18px 12px !important;
   background-color: #ebeef3;
