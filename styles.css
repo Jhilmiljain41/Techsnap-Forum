@@ -1,5 +1,6 @@
 body {
   width: 100%;
+  position: relative;
 }
 span {
   font-size: 15px;
@@ -194,3 +195,22 @@ span > a {
     border-radius: 20px;
     animation: appear 0.2s linear;
   }
+  .nav span .nav-link{
+    visibility: hidden;
+  }
+  .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #000;
+    border-left: 3px solid;
+    border-color: #5050da;
+    visibility: visible;
+    background-color:inherit;
+    border-radius: 0;
+}
+.nav-pills .span1{
+  border-left: 1px solid;
+  border-color: #5050da;
+}
+.sticky-top{
+  top:90px; 
+  z-index: 1;
+}
