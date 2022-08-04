@@ -214,3 +214,109 @@ span > a {
   top:90px; 
   z-index: 1;
 }
+.topic{
+  z-index: 1;
+  margin-bottom: 1em;
+  padding-bottom: 30px;
+}
+.cont::before, .topic-content::before{
+  display: table;
+    content: " ";
+}
+.cont:after, .topic-content::before{
+  clear: both;
+}
+.title-vote {
+  padding-top: 20px;
+  position: relative;
+  padding-right: 0.75em;
+  width: 6em;
+  max-width: 10%;
+  box-sizing: border-box;
+  float: left;
+}
+.vote , .vote-count{
+  cursor: pointer;
+}
+
+.vote-count{
+  font-size: 1.3195em;
+  height: 40px;
+  font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #ececec;
+}
+.vote-button{
+  width: 100%;
+    margin-top: 0.35em;
+}
+.topic-dp {
+  margin-bottom: 56px;
+  padding-top: 15px;
+  width: 45px;
+  float: left;
+  z-index: 2;
+  height: 100%;
+}
+.topic-content{
+  float: left;
+    min-width: 0;
+    position: relative;
+    padding: 12px 0 0 0;
+}
+.topic-content .topic-heading{
+  padding: 0 11px 0.25em 11px;
+}
+.name{
+  flex: 1 1 auto;
+}
+.reply-sec{
+  position: relative;
+  padding-left: 11px;
+  margin: 20px 0;
+}
+.login-sec{
+  margin-left: 11px;
+  border-top: 1px solid #ececec;
+}
+.login-link{
+  margin-top: 1em;
+    padding-top: 1em;
+}
+.login-num{
+  border-radius: 15px;
+  padding: 0 12px;
+  background-color: rgb(219, 241, 248);
+}
+.map{
+  margin: 20px 0 20px 11px;
+  background: #f9f9f9;
+    border-top: none;
+}
+.inside-map{
+  border-top: 1px solid #ececec;
+}
+.inside-map ul{
+  margin: 0;
+  list-style: none;
+  padding-left: 0;
+}
+.inside-map li{
+  float: left;
+  padding: 7px 10px;
+  text-align: center;
+}
+.inside-map li h4{
+  font-weight: normal;
+  font-size: 14px;
+  color: rgb(108,117,125);
+}
+.number{
+  font-size: 20px;
+}
+.btn:hover{
+  background-color: #ebeef3;
+  color: black;
+}
