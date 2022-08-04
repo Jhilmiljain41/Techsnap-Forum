@@ -320,3 +320,16 @@ span > a {
   background-color: #ebeef3;
   color: black;
 }
+@media (max-width:570px) {
+  #navbar-example3{
+    display: none;
+  }
+  .vote-button{
+    display: none;
+  }
+}
+@media (max-width:762px) {
+  .vote-button{
+    font-size: 10px;
+  }
+}
